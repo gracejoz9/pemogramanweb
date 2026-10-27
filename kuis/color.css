@@ -1,0 +1,14 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #0a0d0f;
+    background-color: #e48787;
+}
+
+thead {
+    background-color: rgb(222, 165, 80);
+}
+
+tbody {
+    background-color: beige;
+}
