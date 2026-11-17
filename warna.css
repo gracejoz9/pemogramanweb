@@ -1,0 +1,97 @@
+/* Variabel Warna Hangat */
+:root {
+    --bg: #f5f0e8;
+    --card: #ebd09c;
+    --text: #3d352e;
+    --muted: #7a6e63;
+    --accent: #a65e46;
+    --border: #eecda0;
+}
+
+/* Pengaturan Dasar Halaman */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* EFEK HOVER */
+div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px var(--text);
+}
+
+
+/* Judul Utama (H1) */
+h1 {
+    box-shadow: var(--text);
+    background-color: var(--border);
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: var(--text);
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+/* Garis Pemisah (<hr>) diubah menjadi aksen garis mini */
+hr {
+    border: none;
+    height: 3px;
+    background-color: var(--accent);
+    width: 50px;
+    margin: 0 auto 10px;
+    border-radius: 2px;
+}
+
+/* Mengubah setiap <div> menjadi kotak kartu yang rapi */
+div {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(61, 53, 46, 0.04);
+}
+
+/* Judul Bagian di dalam Kotak (H2) */
+h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+}
+
+/* Paragraf pada Profil Utama */
+p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Daftar Riwayat Pendidikan & Hobi */
+ol, ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+li {
+    font-size: 14px;
+    color: var(--text);
+    padding: 4px 0;
+}
